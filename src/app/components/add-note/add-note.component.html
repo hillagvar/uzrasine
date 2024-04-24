@@ -1,0 +1,8 @@
+<div class="card mt-5">
+    <div class="card-header">Užrašinė</div>
+    <div class="card-body">
+        <label for="" class="form-label">Pridėti naują užrašą</label>
+        <textarea name="" id="" rows="5" class="form-control" [(ngModel)]="content"></textarea>
+        <button class="btn btn-success mt-3" (click)="addNote()" [disabled]="content==null">Pridėti</button>
+    </div>
+</div>
