@@ -11,7 +11,7 @@ import { NoteService } from '../../services/note.service';
   styleUrl: './add-note.component.css'
 })
 export class AddNoteComponent {
-  public date: string = new Date().toLocaleDateString();
+  
   public content: string | null = null;
 
   public notes : Note[];
@@ -22,8 +22,9 @@ export class AddNoteComponent {
 
   public addNote() {
     if (this.content != null) {
+      
         this.noteService.addNote({
-          date: this.date,
+          date: new Date().toLocaleString(),
           content: this.content,
         })
       }
