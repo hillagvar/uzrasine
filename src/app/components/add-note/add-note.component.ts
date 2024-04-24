@@ -27,7 +27,7 @@ export class AddNoteComponent {
           content: this.content,
         })
       }
-      console.log(this.notes);
+      // console.log(this.notes);
       this.content = null;
   }
 
