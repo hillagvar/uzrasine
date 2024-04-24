@@ -1,15 +1,15 @@
 <div class="card mt-5">
     <div class="card-header">Išsaugoti užrašai</div>
     <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">
-                <div class="row mb-3" *ngFor="let item of notes; let i = index">
-                    <div class="col-md-4">{{item.date}}</div>
-                    <div class="col-md-6">{{item.content}}</div>
-                    <div class="col-md-2">
-                        <button class="btn btn-danger btn-sm" (click)="deleteNote(i)">Ištrinti</button>
-                    </div>
+        <ul class="list-group d-flex flex-row justify-content-start gap-3">
+            <li class="list-group-item" style="width: 25%; border-top-width: 1px; border-radius: 5px;" *ngFor="let item of notes; let i = index">
+
+                <div class="p-1">{{item.date}}</div>
+                <div class="p-1">{{item.content}}</div>
+                <div class="p-1">
+                    <button class="btn btn-danger btn-sm" (click)="deleteNote(i)">Ištrinti</button>
                 </div>
+
             </li>
 
         </ul>
